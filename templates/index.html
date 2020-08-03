@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Search Engine</title>
+    <link rel="stylesheet" href ="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <form action="/search" method="POST">
+        {{form.csrf_token}}
+        <div id ="inputCen">
+            {{form.ids}}
+        </div>
+        
+        <div id="cen">
+            {{form.submit}}
+        </div>
+        
+    </form>
+</body>

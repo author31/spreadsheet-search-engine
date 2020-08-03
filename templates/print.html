@@ -1,0 +1,31 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style type="text/css" media="print">
+    
+
+        @media print {
+        @page { margin: 0; }
+        body {
+            margin: 0.4cm;
+            text-align: center; 
+        }
+        td,th,table{
+            word-wrap:break-word;
+        }
+        h1{
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<table>
+    <thead>
+        {% for row in record %}
+        <tr>
+            {% for r in row %}
+            <td>{{r}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </thead>
+</table>

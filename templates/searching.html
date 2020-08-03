@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Search Engine</title>
+    <link rel="stylesheet" href ="{{url_for('static',filename='css/style.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <table class="center">
+        <thead>
+            <tr>
+                {% for col in columns %}
+                <th>{{col}}</th>
+                {% endfor %}
+            </tr>
+            
+        </thead>
+        <tbody>
+            {% for row in record %}
+            <tr>
+                {% for r in row %}
+                <td>{{r}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+    <div id ="wrapper">
+        <button id ="print">Print</button>
+    </div>
+    <script type="text/javascript">
+        $("#print").click(function(){
+            var newW =window.open("/print");
+            newW.print();
+            return false;
+        })
+    </script>
+</body>

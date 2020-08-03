@@ -1,0 +1,48 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0.5rem;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+#print{
+    padding: 10px 15px;
+    background-color: wheat;
+    border: none;
+}
+
+#wrapper{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.center{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#submit{
+    background-color: wheat;
+    border: none;
+    padding: 10px 15px;
+}
+
+#ids{
+    border: 2px solid wheat;
+    height: 30px;
+    width: 50%;
+    font-size: larger;
+}
+
+#cen{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#inputCen{
+    padding-top: 15%;
+    text-align: center;
+}
